@@ -1,0 +1,65 @@
+.weather-panel {
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 60px auto;
+  width: 50%;
+}
+
+.searchbar {
+  padding-bottom: 40px;
+}
+
+.col-2 button {
+  padding: 2px 8px;
+  border-radius: 2px;
+  border: 1px solid rgb(75, 75, 75);
+}
+
+.d-d-t li {
+  list-style: none;
+  color: grey;
+  display: inline;
+  font-size: 14px;
+}
+
+.col-6 h1 {
+  font-size: 130px;
+}
+
+.col-6 p {
+  font-size: 16px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  color: grey;
+}
+
+.col-12 h3 {
+  font-size: 21px;
+  padding-top: 10px;
+}
+.p-h-w li {
+  list-style: none;
+  color: grey;
+  font-size: 14px;
+}
+
+.forecast {
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding: 15px 5px;
+  margin-top: 20px;
+}
+
+.forecast .col {
+  padding: 5px 0px;
+  font-size: 14px;
+}
+
+footer {
+  padding-top: 40px;
+  color: rgb(45, 45, 45);
+  font-size: 10pt;
+  text-align: center;
+}
