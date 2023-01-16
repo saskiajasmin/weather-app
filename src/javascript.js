@@ -16,7 +16,7 @@ let day = days[now.getDay()];
 
 currentDay.innerHTML = `${day},`;
 
-let currentDate = document.querySelector("li#full-date");
+let currentDate = document.querySelector("li#date");
 
 let date = now.getDate();
 
