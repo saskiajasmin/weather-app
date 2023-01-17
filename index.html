@@ -30,27 +30,26 @@
             </form>
           </div>
           <div class="col-2">
-            <button id="current-location">current</button>
+            <button id="convert-button"><strong>°C</strong> | °F</button>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
             <div class="row">
               <div class="col-12">
-                <h3 id="city">📍 Berlin</h3>
-                <ul class="d-d-t">
-                  <li id="day">Saturday,</li>
-                  <li id="date">December 10,</li>
-                  <li id="time">14:30</li>
-                </ul>
+                <h3 id="city"></h3>
+                <p id="date"></p>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <h3>🟨 <span id="weather">mostly sunny</span></h3>
+                <h3>
+                  <img src="" alt="Clear" id="weather-icon" />
+                  <span id="weather"></span>
+                </h3>
                 <ul class="p-h-w">
-                  <li>Humidity: <span id="humidity">40</span>%</li>
-                  <li>Wind: <span id="wind-speed">6 </span> km/h</li>
+                  <li>Humidity: <span id="humidity"></span> %</li>
+                  <li>Wind: <span id="wind-speed"></span> km/h</li>
                 </ul>
               </div>
             </div>
@@ -89,10 +88,10 @@
       </div>
       <footer>
         <p>
-          Open-Source Code @
-          <strong>
-            <a href="https://github.com/saskiajasmin/weather-app"
-              >GitHub</a
+          Open-Source Code
+          <strong
+            ><a href="https://github.com/saskiajasmin/weather-app"
+              >@GitHub</a
             ></strong
           >
         </p>

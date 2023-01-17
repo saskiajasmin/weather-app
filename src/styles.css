@@ -16,15 +16,9 @@
   border: 1px solid rgb(75, 75, 75);
 }
 
-.d-d-t li {
-  list-style: none;
-  color: grey;
-  display: inline;
-  font-size: 14px;
-}
-
 .col-6 h1 {
   font-size: 130px;
+  text-align: center;
 }
 
 .col-6 p {
@@ -35,14 +29,30 @@
   color: grey;
 }
 
+#felt-temp {
+  text-align: center;
+}
+
 .col-12 h3 {
   font-size: 21px;
   padding-top: 10px;
+  margin-left: 0px;
 }
+.col-12 p {
+  font-size: 14px;
+  color: grey;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
 .p-h-w li {
   list-style: none;
   color: grey;
   font-size: 14px;
+}
+
+.p-h-w {
+  margin-left: -30px;
 }
 
 .forecast {
