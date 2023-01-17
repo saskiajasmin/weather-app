@@ -129,6 +129,7 @@ function searchCity(event) {
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showWeather);
+  convertTemperature(event);
 }
 
 let searchbar = document.querySelector("#searchbar");
