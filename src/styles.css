@@ -45,6 +45,11 @@
   padding-top: 5px;
 }
 
+#weather-icon {
+  margin-left: -15px;
+  margin-top: -30px;
+}
+
 .p-h-w li {
   list-style: none;
   color: grey;
