@@ -69,7 +69,7 @@ function showForecast(response) {
      <div class="col-2">
               <div class="forecast-day">${formatDay(forecastDay.dt)}</div>
               <img
-                src="http://openweathermap.org/img/wn/${
+                src="https://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
                 }@2x.png"
                 alt=""
@@ -126,7 +126,7 @@ function showWeather(response) {
   let displayIcon = document.querySelector("#weather-icon");
   displayIcon.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   displayIcon.setAttribute("alt", response.data.weather[0].description);
 
