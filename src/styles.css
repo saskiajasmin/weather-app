@@ -10,15 +10,28 @@
   padding-bottom: 40px;
 }
 
-.col-2 button {
-  padding: 2px 8px;
-  border-radius: 2px;
-  border: 1px solid rgb(75, 75, 75);
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #ea6e4a;
+  --bs-btn-border-color: #ea6e4a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #db6f51;
+  --bs-btn-hover-border-color: #db6f51;
+}
+
+.btn {
+  --bs-btn-padding-y: 0.23rem;
 }
 
 .col-6 h1 {
   font-size: 130px;
   text-align: center;
+  padding-left: 60px;
+}
+
+.felt-temp {
+  text-align: center;
+  padding-left: 80px;
 }
 
 .col-6 p {
@@ -27,10 +40,6 @@
   top: -10px;
   left: -10px;
   color: grey;
-}
-
-#felt-temp {
-  text-align: center;
 }
 
 .col-12 h3 {
@@ -83,8 +92,10 @@ footer {
 
 a {
   text-decoration: none;
+  color: #ea6e4a;
 }
 
 a:hover {
   text-decoration: none;
+  color: #ea6e4a;
 }

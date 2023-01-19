@@ -133,44 +133,6 @@ function showWeather(response) {
   getForecast(response.data.coord);
 }
 
-let active = false;
-
-function convertTemperature(event) {
-  event.preventDefault();
-  let conversionButton = document.querySelector("#convert-button");
-
-  active = !active;
-  if (active) {
-    conversionButton.classList.add("active");
-    conversionButton.innerHTML = `°C | <strong>°F</strong>`;
-    displayFahrenheitTemp();
-  } else {
-    conversionButton.classList.remove("active");
-    conversionButton.innerHTML = `<strong>°C</strong> | °F`;
-    displayCelsiusTemp();
-  }
-}
-function displayFahrenheitTemp() {
-  let fahrenheitTemp = Math.round(celsiusTemperature * 1.8 + 32);
-  let displayFahrenheitTemp = document.querySelector("h1");
-  displayFahrenheitTemp.innerHTML = `${fahrenheitTemp}°`;
-
-  let feltTempFahrenheit = Math.round(feltCelsiusTemp * 1.8 + 32);
-  let displayFeltTempFahrenheit = document.querySelector("#felt-temp");
-  displayFeltTempFahrenheit.innerHTML = `${feltTempFahrenheit}°F`;
-}
-
-function displayCelsiusTemp() {
-  let displayTemp = document.querySelector("h1");
-  displayTemp.innerHTML = `${Math.round(celsiusTemperature)}°`;
-
-  let displayFeltTemp = document.querySelector("#felt-temp");
-  displayFeltTemp.innerHTML = `${Math.round(feltCelsiusTemp)}°C`;
-}
-
-let button = document.querySelector("#convert-button");
-button.addEventListener("click", convertTemperature);
-
 let celsiusTemperature = null;
 let feltCelsiusTemp = null;
 
@@ -181,7 +143,6 @@ function searchCity(event) {
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showWeather);
-  convertTemperature(event);
 }
 
 let searchbar = document.querySelector("#searchbar");
